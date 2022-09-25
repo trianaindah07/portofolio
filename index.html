@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Indah Kastriana Dewi</title>
+    <link href="dist/css/final.css" rel="stylesheet" />
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="block py-6 text-lg font-bold text-primary">... indahQueen</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="mx-8 flex py-2 text-base font-semibold tracking-wide text-dark group-hover:text-primary dark:text-white">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="mx-8 flex py-2 text-base font-semibold tracking-wide text-dark group-hover:text-primary dark:text-white">Tentang</a>
+                </li>
+                <li class="group">
+                  <a href="#portfolio" class="mx-8 flex py-2 text-base font-semibold tracking-wide text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex items-center">
+                    <span class="mr-2 text-slate-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                  </span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-slate-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                      </svg>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Indah Kastriana Dewi</span></h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Mahasiswa <span class="text-dark dark:text-white">Sistem Informasi</span></h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary">Don’t look at who's talking but look at what he's <span class="font-bold text-dark dark:text-white">talking about!</span></p>
+
+            <a href="https://wa.me/628895455662" target="_blank" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-0 lg:mt-9">
+              <img src="dist/img/me.png" alt="Willy Setiawan" class="relative z-10 mx-auto max-w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">Riwayat Sekolah</h2>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">- SMA Negeri 1 Majenang - Tahun 2019</p>
+            <p class="max-w-xl text-sm font-medium text-secondary lg:text-base">Mengambil jurusan IPA dan mengikuti pernah mengikuti organisasi OSIS.</p>
+            <br>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">- STMIK Komputama Majenang - Sekarang</p>
+            <p class="max-w-xl text-sm font-medium text-secondary lg:text-base">Mengambil S1 Program Studi Sistem Informasi Tahun Angkatan 2019.</p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">Riwayat Pekerjaan</h3>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">- Waiters dan Cashier</p>
+            <p class="max-w-xl text-sm font-medium text-secondary lg:text-base">Bekerja sebagai Waiters dan Cashier di Banana Cafe Majenang selama 1 tahun.</p>
+            <br>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">- SPG</p>
+            <p class="max-w-xl text-sm font-medium text-secondary lg:text-base">Memasarkan produk dari Laksana Baru Swalayan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-8 lg:mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              Berikut adalah beberapa project yang pernah saya kerjakan.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/1.png" alt="Landing Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+              <a href="http://presentia.rf.gd" target="_blank" class="hover:text-primary">
+                Arsip Surat - SMK Komputama Pesahangan
+              </a> 
+            </h3>
+            <p class="text-base font-medium text-secondary">Sebuah aplikasi yang digunakan untuk melakukan pengarsipan surat masuk dan surat keluar yang diterapkan di instansi SMK Komputama Pesahangan.</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/2.png" alt="Landing Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+              <a href="https://qualisesstama.web.app/" target="_blank" class="hover:text-primary">
+                Properti Nusantara
+              </a> 
+              </h3>
+            <p class="text-base font-medium text-secondary">Aplikasi penjualan properti rumah, bangunan, hotel, dan lain-lain di tiga wilayah yaitu Semarang, Surabaya, dan Jakarta Selatan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark py-10">
+      <div class="container">
+        <div class="w-full">
+          <p class="text-center text-xs font-medium text-slate-500">
+            Dibuat dengan <span class="text-pink-500">❤️</span> oleh <span class="font-bold text-primary">Indah Kastriana Dewi</span>.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
